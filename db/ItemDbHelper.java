@@ -10,6 +10,7 @@ public class ItemDbHelper extends SQLiteOpenHelper {
         super(context, ItemContract.DB_NAME, null, ItemContract.DB_VERSION);
     }
 
+    //creates table
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTable = "CREATE TABLE " + ItemContract.ItemEntry.TABLE + " ( " +
